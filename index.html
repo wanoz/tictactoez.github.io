@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    <title>Eventlistener Test</title>
+</head>
+
+<body>
+    <div class="container" align="center">
+        <h2 id="header">Tick-Tac-Toe</h2>
+
+        <table class="gameTable gameTableWhole">
+            <tr>
+                <td class="gameTable gameTableCell" id="x1y1"></td>
+                <td class="gameTable gameTableCell" id="x1y2"></td>
+                <td class="gameTable gameTableCell" id="x1y3"></td>
+            </tr>
+            <tr>
+                <td class="gameTable gameTableCell" id="x2y1"></td>
+                <td class="gameTable gameTableCell" id="x2y2"></td>
+                <td class="gameTable gameTableCell" id="x2y3"></td>
+            </tr>
+            <tr>
+                <td class="gameTable gameTableCell" id="x3y1"></td>
+                <td class="gameTable gameTableCell" id="x3y2"></td>
+                <td class="gameTable gameTableCell" id="x3y3"></td>
+            </tr>
+        </table>
+
+        <p id="spacer"></p>
+        <button type="button" class="btn btn-outline-primary" id="restartbtn"></button>
+    </div>
+
+</body>
+
+<!-- CSS code -->
+<style>
+    #header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .gameTable {
+        border: 5px black solid;
+    }
+
+    .gameTableWhole {
+        height: 480px;
+        width: 480px;
+    }
+
+    .gameTableCell {
+        height: 150px;
+        width: 150px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .aInflate {
+        font-size: 80px;
+        transition-property: font-size;
+        transition-duration: 0.25s;
+        transition-timing-function: cubic-bezier(0,.80,.60,2);
+    }
+
+    .btn:focus {
+        box-shadow: none !important;
+    }
+
+    .btn {
+        border-width: 1.5px;
+        font-weight: bold;
+    }
+
+    #spacer {
+        padding-top: 30px;
+    }
+
+    #restartbtn {
+        height: 60px;
+        width: 220px;
+    }
+</style>
+
+<!-- Custom javascript source -->
+<script src="eventlistener_example.js"></script>
+
+</html>
