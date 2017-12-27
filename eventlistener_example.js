@@ -175,4 +175,5 @@ GameState = {};
 initialiseStates(GameState);
 
 // Set eventlistener to check for click
-document.addEventListener("click", eventHandling);
+var uiContact = (("ontouchstart" in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? "touchstart" : "click";
+document.addEventListener(uiContact, eventHandling);
